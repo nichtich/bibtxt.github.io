@@ -55,3 +55,8 @@ Use it as you please with no restrictions whatsoever.
 ## Questions? Comments?
 
 Send them along to the [wwwmake mailing list/forum](http://groups.google.com/group/wwwmake). Thanks.
+
+
+<!-- todo: move footer to layouts -->
+
+Brought to you by [Manuscripts](https://github.com/manuscripts) and friends.
