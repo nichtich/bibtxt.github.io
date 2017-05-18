@@ -63,6 +63,11 @@ Bib.TXT can be parsed into a key-value structure by any YAML parser (there's a l
 
 ...
 
+## Limitations
+
+* Values cannot include line breaks
+* The first character of a value must not be one of `"`, `'`, `|`, `>`, `[` and `{`.
+
 ## License
 
 The Bib.TXT format and conventions are dedicated to the public domain.
