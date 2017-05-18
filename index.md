@@ -7,7 +7,7 @@ title: Welcome
 
 ```
 @Book{Fau86,
-  author    = "J.W. Goethe",
+  author    = {J.W. Goethe},
   title     = "Faust. Der Trag\"{o}die Erster Teil",
   publisher = "Reclam",
   year      = 1986,
@@ -18,8 +18,8 @@ title: Welcome
 
 ## What's Bib.TXT?
 
-```
-[Fau86]
+```yaml
+Fau86:
   author:    J.W. Goethe
   title:     Faust. Der Tragödie Erster Teil
   publisher: Reclam
@@ -34,18 +34,34 @@ What's the difference?
 - No quotes required
 - No commas required
 - More shortcuts (upcoming)
-- Multi-line text records compatible e.g. reading records with a "plain-vanilla" ValuesReader (that knows nothing about Bib.TXT conventions) will result in a "well-formed" array of hashes: 
 
-```ruby
-{ key:       "Fau86",
-  author:    "J.W. Goethe",
-  title:     "Faust. Der Tragödie Erster Teil",
-  publisher: "Reclam",
-  year:      1986,
-  address:   "Stuttgart" }
+Bib.TXT can be parsed into a key-value structure by any YAML parser (there's a library for virtually every programming languages). 
+
+```javascript
+{ 
+  Fau86: {
+    author:    "J.W. Goethe",
+    title:     "Faust. Der Tragödie Erster Teil",
+    publisher: "Reclam",
+    year:      1986,
+    address:   "Stuttgart"
+  }
+}
 ```
 
+```ruby
+{ 
+  "Fau86" => {
+    "author" =>     "J.W. Goethe",
+    "title" =>      "Faust. Der Tragödie Erster Teil",
+    "publisher" =>  "Reclam",
+    "year" =>       1986,
+    "address" =>    "Stuttgart"
+  }
+}
+```
 
+...
 
 ## License
 
